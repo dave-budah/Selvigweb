@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Home</title>
+    <meta name="description" content="A simple HTML5 Template for new projects.">
+    <meta name="author" content="SitePoint">
+
+    <meta property="og:title" content="A Basic HTML5 Template">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.example.com">
+    <meta property="og:description" content="A simple HTML5 Template for new projects.">
+    <meta property="og:image" content="image.png">
+
+    <link rel="icon" href="images/favicon.png">
+    <link rel="icon" href="images/favicon.png" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Progress indicator -->
+<div class="load" id="load">
+    <div class="spinner">
+        <div class="spinner-item"></div>
+        <div class="spinner-item"></div>
+        <div class="spinner-item"></div>
+        <div class="spinner-item"></div>
+        <div class="spinner-item"></div>
+    </div>
+</div>
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="#" class="nav-logo">
+            <img src="images/logo.png" alt="" class="nav-logo-img">
+        </a>
+
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <div class="nav-close" id="nav-close">
+                <img src="icons/close.png" alt="Close">
+            </div>
+        </div>
+
+        <div class="nav-toggle" id="nav-toggle">
+            <img src="icons/menu.png" alt="menu toggle">
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="home grid" id="home">
+        <div class="home-container">
+            <div class="home-content container">
+                <h1 class="home-title">Helping businesses grow using modern technologies</h1>
+                <p class="home-description">
+                    We create websites, mobile applications
+                    and other software that suit your needs
+                    in running your business effectively.
+                </p>
+                <div class="home-data">
+                    <div class="home-data-group">
+                        <h2 class="home-data-number">Websites</h2>
+                        <h3 class="home-data-title">Modern UI</h3>
+                        <p class="home-data-description">Mobile friendly interfaces</p>
+                    </div>
+
+                    <div class="home-data-group">
+                        <h2 class="home-data-number">Mobile Apps</h2>
+                        <h3 class="home-data-title">Android & IOS</h3>
+                        <p class="home-data-description">Light weight and user-friendly mobile applications</p>
+                    </div>
+
+                    <a href="#services">
+                        <span class="home-scroll"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <img src="images/home.jpg" alt="" class="home-image">
+    </section>
+
+<!--    Services -->
+    <section id="services" class="services section container">
+        <div class="services-container">
+            <div class="special-box">
+                <h2 class="section-title">Services that we offer.</h2>
+
+                <div>
+                    <a href="#" class="button services-button">Learn more</a>
+                </div>
+            </div>
+
+            <div class="service-category">
+                <div class="service-group service-line">
+                    <img src="images/webdev.png" alt="" class="service-img">
+
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-description">Designing and developing websites.</p>
+                </div>
+
+                <div class="service-group service-line">
+                    <img src="images/phone.png" alt="" class="service-img">
+
+                    <h3 class="service-title">Mobile Applications</h3>
+                    <p class="service-description">Android and IOS applications development.</p>
+                </div>
+
+                <div class="service-group">
+                    <img src="images/mobile-marketing.png" alt="" class="service-img">
+
+                    <h3 class="service-title">Digital Marketing</h3>
+                    <p class="service-description">We help your brand reach potential customers anywhere in the world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--    End Services -->
+
+<!--    Projects -->
+    <section class="projects section" id="projects">
+        <div class="product-container container">
+            <h2 class="section-title">
+                Some of our recent projects.
+            </h2>
+
+            <ul class="products-filters">
+                <li class="productsItem products-line active-product" data-filter=".frontend">
+                    <h3 class="products-title">Lorem ipsum</h3>
+                    <span class="products-stock">3 Products</span>
+                </li>
+
+                <li class="productsItem products-line" data-filter=".backend">
+                    <h3 class="products-title">Lorem ipsum</h3>
+                    <span class="products-stock">3 Products</span>
+                </li>
+
+                <li class="productsItem products-line" data-filter=".mobile">
+                    <h3 class="products-title">Lorem ipsum</h3>
+                    <span class="products-stock">3 Products</span>
+                </li>
+            </ul>
+
+            <div class="productsContent grid">
+                <arcticle class="productsCard frontend">
+                    <div class="products-shape">
+                        <img src="images/a.png" alt="" class="products-img">
+                    </div>
+
+                    <div class="products-data">
+                        <h2 class="products-price">Title here 1</h2>
+                        <p class="products-name">Excerpt here</p>
+
+                        <button class="button products-button">
+                            <img src="icons/visibility.png" alt="" class="eye-icon">
+                        </button>
+                    </div>
+                </arcticle>
+
+                <arcticle class="productsCard frontend">
+                    <div class="products-shape">
+                        <img src="images/b.png" alt="" class="products-img">
+                    </div>
+
+                    <div class="products-data">
+                        <h2 class="products-price">Title here</h2>
+                        <p class="products-name">Excerpt here</p>
+
+                        <button class="button products-button">
+                            <img src="icons/visibility.png" alt="" class="eye-icon">
+                        </button>
+                    </div>
+                </arcticle>
+
+                <arcticle class="productsCard frontend">
+                    <div class="products-shape">
+                        <img src="images/a.png" alt="" class="products-img">
+                    </div>
+
+                    <div class="products-data">
+                        <h2 class="products-price">Title here</h2>
+                        <p class="products-name">Excerpt here</p>
+
+                        <button class="button products-button">
+                            <img src="icons/visibility.png" alt="" class="eye-icon">
+                        </button>
+                    </div>
+                </arcticle>
+
+<!-- Another collection here-->
+                <arcticle class="productsCard backend">
+                    <div class="products-shape">
+                        <img src="images/a.png" alt="" class="products-img">
+                    </div>
+
+                    <div class="products-data">
+                        <h2 class="products-price">Title here 2</h2>
+                        <p class="products-name">Excerpt here</p>
+
+                        <button class="button products-button">
+                            <img src="icons/visibility.png" alt="" class="eye-icon">
+                        </button>
+                    </div>
+                </arcticle>
+
+                <arcticle class="productsCard backend">
+                    <div class="products-shape">
+                        <img src="images/a.png" alt="" class="products-img">
+                    </div>
+
+                    <div class="products-data">
+                        <h2 class="products-price">Title here</h2>
+                        <p class="products-name">Excerpt here</p>
+
+                        <button class="button products-button">
+                            <img src="icons/visibility.png" alt="" class="eye-icon">
+                        </button>
+                    </div>
+                </arcticle>
+
+                <arcticle class="productsCard backend">
+                    <div class="products-shape">
+                        <img src="images/a.png" alt="" class="products-img">
+                    </div>
+
+                    <div class="products-data">
+                        <h2 class="products-price">Title here</h2>
+                        <p class="products-name">Excerpt here</p>
+
+                        <button class="button products-button">
+                            <img src="icons/visibility.png" alt="" class="eye-icon">
+                        </button>
+                    </div>
+                </arcticle>
+<!-- End Another collection here-->
+
+<!-- Another collection here-->
+                <arcticle class="productsCard mobile">
+                    <div class="products-shape">
+                        <img src="images/a.png" alt="" class="products-img">
+                    </div>
+
+                    <div class="products-data">
+                        <h2 class="products-price">Title here 3</h2>
+                        <p class="products-name">Excerpt here</p>
+
+                        <button class="button products-button">
+                            <img src="icons/visibility.png" alt="" class="eye-icon">
+                        </button>
+                    </div>
+                </arcticle>
+
+                <arcticle class="productsCard mobile">
+                    <div class="products-shape">
+                        <img src="images/a.png" alt="" class="products-img">
+                    </div>
+
+                    <div class="products-data">
+                        <h2 class="products-price">Title here</h2>
+                        <p class="products-name">Excerpt here</p>
+
+                        <button class="button products-button">
+                            <img src="icons/visibility.png" alt="" class="eye-icon">
+                        </button>
+                    </div>
+                </arcticle>
+
+                <arcticle class="productsCard mobile">
+                    <div class="products-shape">
+                        <img src="images/a.png" alt="" class="products-img">
+                    </div>
+
+                    <div class="products-data">
+                        <h2 class="products-price">Title here</h2>
+                        <p class="products-name">Excerpt here</p>
+
+                        <button class="button products-button">
+                            <img src="icons/visibility.png" alt="" class="eye-icon">
+                        </button>
+                    </div>
+                </arcticle>
+<!-- End Another collection here-->
+            </div>
+        </div>
+    </section>
+<!--  End  Projects -->
+
+<!--    Blog Section -->
+    <section class="blog section" id="blog">
+        <div class="blog-container container">
+            <h2 class="section-title">
+                Recent articles
+            </h2>
+
+            <div class="blog-content grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/b.png" alt="" class="blog-img">
+                        <a href="#" class="blog-button">
+                            <img src="icons/visibility.png" class="eye-icon" alt="">
+                        </a>
+                    </div>
+                    <div class="blog-data">
+                        <h2 class="blog-title">Lorem ipsum dolor sit amet.</h2>
+                        <p class="blog-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse iste nemo perspiciatis quaerat sequi ullam.
+                        </p>
+                        <div class="blog-footer">
+                            <div class="blog-reaction">
+                                <img src="icons/user.png" alt="" class="eye-icon">
+                                <span>Blog Writer</span>
+                            </div>
+
+                            <div class="blog-reaction">
+                                <img src="icons/calendar.png" alt="" class="eye-icon">
+                                <span>20 Feb 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/a.png" alt="" class="blog-img">
+                        <a href="#" class="blog-button">
+                            <img src="icons/visibility.png" class="eye-icon" alt="">
+                        </a>
+                    </div>
+                    <div class="blog-data">
+                        <h2 class="blog-title">Lorem ipsum dolor sit amet.</h2>
+                        <p class="blog-description">Lorem ipsum dolor sit. Aspernatur consequatur deserunt distinctio minus molestias nobis obcaecati porro quam qui temporibus?</p>
+                        <div class="blog-footer">
+                            <div class="blog-reaction">
+                                <img src="icons/user.png" alt="" class="eye-icon">
+                                <span>Writer</span>
+                            </div>
+
+                            <div class="blog-reaction">
+                                <img src="icons/calendar.png" alt="" class="eye-icon">
+                                <span>23 Feb 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/a.png" alt="" class="blog-img">
+                        <a href="#" class="blog-button">
+                            <img src="icons/visibility.png" class="eye-icon" alt="">
+                        </a>
+                    </div>
+                    <div class="blog-data">
+                        <h2 class="blog-title">Lorem ipsum dolor sit amet.</h2>
+                        <p class="blog-description">Lorem ipsum dolor sit. Aspernatur consequatur deserunt distinctio minus molestias nobis obcaecati porro quam qui temporibus?</p>
+                        <div class="blog-footer">
+                            <div class="blog-reaction">
+                                <img src="icons/user.png" alt="" class="eye-icon">
+                                <span>Writer</span>
+                            </div>
+
+                            <div class="blog-reaction">
+                                <img src="icons/calendar.png" alt="" class="eye-icon">
+                                <span>23 Feb 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/a.png" alt="" class="blog-img">
+                        <a href="#" class="blog-button">
+                            <img src="icons/visibility.png" class="eye-icon" alt="">
+                        </a>
+                    </div>
+                    <div class="blog-data">
+                        <h2 class="blog-title">Lorem ipsum dolor sit amet.</h2>
+                        <p class="blog-description">Lorem ipsum dolor sit. Aspernatur consequatur deserunt distinctio minus molestias nobis obcaecati porro quam qui temporibus?</p>
+                        <div class="blog-footer">
+                            <div class="blog-reaction">
+                                <img src="icons/user.png" alt="" class="eye-icon">
+                                <span>Writer</span>
+                            </div>
+
+                            <div class="blog-reaction">
+                                <img src="icons/calendar.png" alt="" class="eye-icon">
+                                <span>23 Feb 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+<!-- End   Blog Section -->
+</main>
+
+<footer class="footer">
+<div class="footer-container container">
+    <img src="images/logo.png" alt="" class="footer-logo">
+
+    <div class="footer-content grid">
+        <div class="footer-data">
+            <p class="footer-description">
+                Subscribe to our newsletter
+            </p>
+            <div class="footer-newsletter">
+                <input type="email" class="footer-input" placeholder="Enter email address">
+                <button class="footer-button">
+                    <img src="icons/send.png" class="eye-icon" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="footer-data">
+            <h2 class="footer-subtitle">Address</h2>
+            <p class="footer-information">67678 Westlea, <br>
+             Harare</p>
+        </div>
+        <div class="footer-data">
+            <h2 class="footer-subtitle">Contact</h2>
+            <p class="footer-information">selvigtech@gmail.com, <br>
+                +263772000000</p>
+        </div>
+        <div class="footer-data">
+            <h2 class="footer-subtitle">Office</h2>
+            <p class="footer-information">Mon - Sat, <br>
+                9am to 8pm</p>
+        </div>
+    </div>
+    <div class="footer-group">
+        <ul class="footer-social">
+            <a href="" class="footer-social-link" target="_blank">
+                <img src="icons/facebook.png" alt="" class="social-icon">
+            </a>
+            <a href="" class="footer-social-link" target="_blank">
+                <img src="icons/twitter.png" alt="" class="social-icon">
+            </a>
+            <a href="" class="footer-social-link" target="_blank">
+                <img src="icons/linkedin.png" alt="" class="social-icon">
+            </a>
+        </ul>
+
+        <span class="footer-copyright">
+                &copy; <script>new Date().getFullYear()>2010&&document.write(""+new Date().getFullYear());</script>, Selvigtech.
+            </span>
+    </div>
+</div>
+</footer>
+
+<!-- Scroll-up button -->
+<a href="#" class="scrollUp" id="scroll-up">
+    <img src="icons/up-arrow.png" alt="" class="social-icon">
+</a>
+
+<script src="js/mixitup.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
